@@ -10,23 +10,25 @@ function consumoDigiAPI () {
         let nChampion = 0;
         let nUltimate = 0;
         let nMega = 0;
+        let nContador = 0 ;
+        let textoTarjeta = '' ;
 
         for (let i = 0; i < listaDigimon.length; i++) {
 
-            var textoTarjeta = listaDigimon[i].level === 'In Training' ? 'a' + 'InTraining': 'a' + listaDigimon[i].level;
+            textoTarjeta = listaDigimon[i].level == 'In Training' ? 'a' + 'InTraining': 'a' + listaDigimon[i].level;
 
             if (textoTarjeta == 'aFresh') {
-                var nContador = nFresh
+                nContador = nFresh
             } else if (textoTarjeta == 'aInTraining'){
-                var nContador = nInTraining
+                nContador = nInTraining
             } else if (textoTarjeta == 'aRookie'){
-                var nContador = nRookie
+                nContador = nRookie
             } else if (textoTarjeta == 'aChampion'){
-                var nContador = nChampion
+                nContador = nChampion
             } else if (textoTarjeta == 'aUltimate'){
-                var nContador = nUltimate
+                nContador = nUltimate
             } else if (textoTarjeta == 'aMega'){
-                var nContador = nMega
+                nContador = nMega
             }
 
             let crearTarjeta = document.createElement ('div');
@@ -37,11 +39,12 @@ function consumoDigiAPI () {
 
             let creandoImg = document.createElement('img');
             creandoImg.src = listaDigimon[i].img;
+            creandoImg.alt = '';
             creandoImg.style.maxWidth = '90px';
             document.getElementsByClassName(textoTarjeta)[nContador].appendChild(creandoImg);
 
             let creandoNombre = document.createElement('p');
-            creandoNombre.setAttribute ('class','nombre')
+            creandoNombre.setAttribute ('class','nombre');
             creandoNombre.innerHTML = listaDigimon[i].name + '<br>';
             document.getElementsByClassName(textoTarjeta)[nContador].appendChild(creandoNombre);
 
@@ -67,7 +70,7 @@ function consumoDigiAPI () {
 
         }
     })
-    .catch();
+    .catch(error => { console.log(error) });
 };
 
 function soloFresh () {
