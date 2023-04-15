@@ -12,6 +12,7 @@ function consumoDigiAPI () {
         let nMega = 0;
         let nContador = 0 ;
         let textoTarjeta = '' ;
+        let textoNombre= '';
 
         for (let i = 0; i < listaDigimon.length; i++) {
 
@@ -68,12 +69,25 @@ function consumoDigiAPI () {
                 nMega = nMega + 1
             }
 
+            textoNombre =  listaDigimon[i].name
+            let creandoLista = document.createElement('option');
+            creandoLista.setAttribute('value', textoNombre);
+            creandoLista.innerHTML = listaDigimon[i].name;
+            document.getElementById('digimons').appendChild(creandoLista);
+
         }
     })
     .catch(error => { console.log(error) });
 };
 
 function soloFresh () {
+
+  let trabajarContenido = document.getElementsByClassName('contenido')
+  trabajarContenido[0].style.justifyContent = 'space-around';
+  trabajarContenido[0].style.padding = '2%';
+  let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+  trabajarTarjetaGrande[0].style.display = 'none';
+  
     let bFresh = document.getElementsByClassName('aFresh')
 
     for (var i = 0; i < bFresh.length; i++) {
@@ -108,8 +122,14 @@ function soloFresh () {
 
 
 function soloInTraining () {
-    let bFresh = document.getElementsByClassName('aFresh')
 
+  let trabajarContenido = document.getElementsByClassName('contenido')
+  trabajarContenido[0].style.justifyContent = 'space-around';
+  trabajarContenido[0].style.padding = '2%';
+  let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+  trabajarTarjetaGrande[0].style.display = 'none';
+  
+    let bFresh = document.getElementsByClassName('aFresh')
     for (var i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
@@ -141,6 +161,13 @@ function soloInTraining () {
 }
 
 function soloRookie () {
+
+  let trabajarContenido = document.getElementsByClassName('contenido')
+  trabajarContenido[0].style.justifyContent = 'space-around';
+  trabajarContenido[0].style.padding = '2%';
+  let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+  trabajarTarjetaGrande[0].style.display = 'none';
+  
     let bFresh = document.getElementsByClassName('aFresh')
 
     for (var i = 0; i < bFresh.length; i++) {
@@ -175,8 +202,14 @@ function soloRookie () {
 
 
 function soloChampion () {
-    let bFresh = document.getElementsByClassName('aFresh')
 
+  let trabajarContenido = document.getElementsByClassName('contenido')
+  trabajarContenido[0].style.justifyContent = 'space-around';
+  trabajarContenido[0].style.padding = '2%';
+  let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+  trabajarTarjetaGrande[0].style.display = 'none';
+
+    let bFresh = document.getElementsByClassName('aFresh')
     for (var i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
@@ -209,6 +242,13 @@ function soloChampion () {
 
 
 function soloUltimate () {
+
+    let trabajarContenido = document.getElementsByClassName('contenido')
+    trabajarContenido[0].style.justifyContent = 'space-around';
+    trabajarContenido[0].style.padding = '2%';
+    let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+    trabajarTarjetaGrande[0].style.display = 'none';
+
     let bFresh = document.getElementsByClassName('aFresh')
 
     for (var i = 0; i < bFresh.length; i++) {
@@ -243,8 +283,14 @@ function soloUltimate () {
 
 
 function soloMega () {
-    let bFresh = document.getElementsByClassName('aFresh')
 
+    let trabajarContenido = document.getElementsByClassName('contenido')
+    trabajarContenido[0].style.justifyContent = 'space-around';
+    trabajarContenido[0].style.padding = '2%';
+    let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+    trabajarTarjetaGrande[0].style.display = 'none';
+
+    let bFresh = document.getElementsByClassName('aFresh')
     for (var i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
@@ -277,8 +323,13 @@ function soloMega () {
 
 
 function allAll () {
-    let bFresh = document.getElementsByClassName('aFresh')
+    let trabajarContenido = document.getElementsByClassName('contenido')
+    trabajarContenido[0].style.justifyContent = 'space-around';
+    trabajarContenido[0].style.padding = '2%';
+    let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+    trabajarTarjetaGrande[0].style.display = 'none';
 
+    let bFresh = document.getElementsByClassName('aFresh')
     for (var i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "flex";
       }
@@ -308,3 +359,67 @@ function allAll () {
         bMega[i].style.display = "flex";
       }
 }
+
+function consultarDigimon() {
+
+  fetch('https://digimon-api.vercel.app/api/digimon')
+  .then(response => response.json())
+  .then(listaDigimon =>{  
+    let bFresh = document.getElementsByClassName('aFresh')
+
+    for (var i = 0; i < bFresh.length; i++) {
+        bFresh[i].style.display = "none";
+      }
+
+    let bInTraining = document.getElementsByClassName('aInTraining')
+    for (var i = 0; i < bInTraining.length; i++) {
+        bInTraining[i].style.display = "none";
+      }
+
+    let bRookie = document.getElementsByClassName('aRookie')
+    for (var i = 0; i < bRookie.length; i++) {
+        bRookie[i].style.display = "none";
+      }
+
+    let bChampion = document.getElementsByClassName('aChampion')
+    for (var i = 0; i < bChampion.length; i++) {
+        bChampion[i].style.display = "none";
+      }
+
+    let bUltimate = document.getElementsByClassName('aUltimate')
+    for (var i = 0; i < bUltimate.length; i++) {
+        bUltimate[i].style.display = "none";
+      }
+
+    let bMega = document.getElementsByClassName('aMega')
+    for (var i = 0; i < bMega.length; i++) {
+        bMega[i].style.display = "none";
+      }
+
+    let trabajarContenido = document.getElementsByClassName('contenido')
+    trabajarContenido[0].style.justifyContent = 'center';
+    trabajarContenido[0].style.padding = '5%';
+
+    
+    let trabajarTarjetaGrande = document.getElementsByClassName('tarjetaGrande')
+    trabajarTarjetaGrande[0].style.display = 'flex';
+
+    let imagenDigimon = document.getElementById ('img2')
+    let nombreDigimon = document.getElementById ('nombre2')
+    let nivelDigimon = document.getElementById ('nivel2')
+    
+    let nombreParaBuscar = document.getElementById('digimons').value
+    for(let i = 0; i < listaDigimon.length; i++){
+
+      if (listaDigimon[i].name == nombreParaBuscar){
+
+        imagenDigimon.src = listaDigimon[i].img;
+        nombreDigimon.innerHTML = listaDigimon[i].name;
+        nivelDigimon.innerHTML = listaDigimon[i].level;
+      }
+
+    }
+
+  })
+  .catch(error => { console.log(error) });
+};
