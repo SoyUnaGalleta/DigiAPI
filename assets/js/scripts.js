@@ -90,32 +90,32 @@ function soloFresh () {
   
     let bFresh = document.getElementsByClassName('aFresh')
 
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "flex";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "none";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "none";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "none";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "none";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "none";
       }
 }
@@ -130,32 +130,32 @@ function soloInTraining () {
   trabajarTarjetaGrande[0].style.display = 'none';
   
     let bFresh = document.getElementsByClassName('aFresh')
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "flex";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "none";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "none";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "none";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "none";
       }
 }
@@ -170,32 +170,32 @@ function soloRookie () {
   
     let bFresh = document.getElementsByClassName('aFresh')
 
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "none";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "flex";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "none";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "none";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "none";
       }
 }
@@ -210,32 +210,32 @@ function soloChampion () {
   trabajarTarjetaGrande[0].style.display = 'none';
 
     let bFresh = document.getElementsByClassName('aFresh')
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "none";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "none";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "flex";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "none";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "none";
       }
 }
@@ -251,32 +251,32 @@ function soloUltimate () {
 
     let bFresh = document.getElementsByClassName('aFresh')
 
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "none";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "none";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "none";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "flex";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "none";
       }
 }
@@ -291,32 +291,32 @@ function soloMega () {
     trabajarTarjetaGrande[0].style.display = 'none';
 
     let bFresh = document.getElementsByClassName('aFresh')
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "none";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "none";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "none";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "none";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "flex";
       }
 }
@@ -330,32 +330,32 @@ function allAll () {
     trabajarTarjetaGrande[0].style.display = 'none';
 
     let bFresh = document.getElementsByClassName('aFresh')
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "flex";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "flex";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "flex";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "flex";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "flex";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "flex";
       }
 }
@@ -367,32 +367,32 @@ function consultarDigimon() {
   .then(listaDigimon =>{  
     let bFresh = document.getElementsByClassName('aFresh')
 
-    for (var i = 0; i < bFresh.length; i++) {
+    for (let i = 0; i < bFresh.length; i++) {
         bFresh[i].style.display = "none";
       }
 
     let bInTraining = document.getElementsByClassName('aInTraining')
-    for (var i = 0; i < bInTraining.length; i++) {
+    for (let i = 0; i < bInTraining.length; i++) {
         bInTraining[i].style.display = "none";
       }
 
     let bRookie = document.getElementsByClassName('aRookie')
-    for (var i = 0; i < bRookie.length; i++) {
+    for (let i = 0; i < bRookie.length; i++) {
         bRookie[i].style.display = "none";
       }
 
     let bChampion = document.getElementsByClassName('aChampion')
-    for (var i = 0; i < bChampion.length; i++) {
+    for (let i = 0; i < bChampion.length; i++) {
         bChampion[i].style.display = "none";
       }
 
     let bUltimate = document.getElementsByClassName('aUltimate')
-    for (var i = 0; i < bUltimate.length; i++) {
+    for (let i = 0; i < bUltimate.length; i++) {
         bUltimate[i].style.display = "none";
       }
 
     let bMega = document.getElementsByClassName('aMega')
-    for (var i = 0; i < bMega.length; i++) {
+    for (let i = 0; i < bMega.length; i++) {
         bMega[i].style.display = "none";
       }
 
